@@ -1,0 +1,1076 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    font-family: 'Open Sans Condensed', 'HelveticaNeue-CondensedBold', Helvetica, 'Arial Narrow', Calibri, Arial, 'Lucida Grande', sans-serif;
+    ;
+    font-size: 1rem;
+
+}
+
+:root,
+body,
+html {
+    /* background-color: #6e6e6e; */
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+:root {
+    --greyeish: #404040;
+    --orange: #ff7200;
+    --greyBlack: #3c3c3c;
+    --white: #fff;
+    --lightGrey: #9c9c9c;
+    --para-text: #505050;
+
+
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+img,
+label,
+li,
+nav,
+p,
+small,
+span,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+
+
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* Reasuable code  */
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active {
+    background-color: var(--orange);
+    border-radius: 2rem;
+    padding: .8rem 1.6rem;
+    color: var(--white);
+}
+
+
+/* Reasuable code Ends  */
+
+/* TOP NAV  */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: .4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: fixed;
+
+
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 1px 1px 5px 1px #888888;
+
+}
+
+.logo img {
+    width: 10.5rem;
+    margin-left: 5rem;
+
+
+
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    gap: 1.3rem;
+    margin-right: 10rem;
+
+}
+
+
+.nav-item img {
+    width: 2rem;
+}
+
+.nav-item .active a {
+    color: var(--white);
+}
+
+.nav-item a {
+    width: 2rem;
+    color: var(--greyeish);
+
+}
+
+.search,
+.bell {
+    background-color: var(--greyeish);
+    border-radius: 100%;
+    padding: .2rem;
+
+}
+
+.bell {
+    background-color: var(--lightGrey);
+}
+
+/* https://www.devexpress.com/products/net/controls/winforms/rich_editor/media/WinForms-RichEditor.jpg */
+/* >>>>>>>>>>>>>>>>>>>> hero section start  */
+
+.hero {
+    background: linear-gradient(0deg, rgba(17, 16, 17, 0.8), rgba(10, 10, 10, 0.8)), url(https://www.devexpress.com/products/net/controls/winforms/rich_editor/media/WinForms-RichEditor.jpg );
+    background-size: 100%;
+    height: 100%;
+    margin-top: 3rem;
+
+
+
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hero-nav img {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.hero-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-stretch: normal;
+}
+
+.line {
+    width: .1rem;
+    height: 3rem;
+    background-color: #9c9c9c;
+}
+
+.hero-nav-item a {
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+
+.hero-content {
+    gap: 2rem;
+    margin-top: 12rem;
+    color: var(--white);
+
+}
+
+.hero-heading {
+    font-size: 6rem;
+    font-stretch: normal;
+}
+
+.hero p {
+    font-size: 2rem;
+    width: 65%;
+
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+
+.hero-btn {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.border {
+    border: .2rem solid var(--white);
+    border-radius: 2rem;
+    padding: .6rem 2rem;
+}
+
+.hero-btns .border {
+    color: var(--white);
+}
+
+/* hero-award */
+.hero-bottom-award {
+    margin-top: 15rem;
+    background: linear-gradient(0deg, rgba(17, 16, 17, 0.5), rgba(10, 10, 10, 0.5));
+
+    padding: 2rem 10rem;
+    justify-content: flex-start;
+
+}
+
+.award {
+    gap: 2rem;
+}
+
+.hero-bottom-award img {
+    width: 6rem;
+}
+
+.award h2 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.award p {
+    color: var(--lightGrey);
+    font-size: 1.3rem;
+    width: 50%;
+    text-align: start;
+}
+
+.award-content {
+    align-items: flex-start;
+    gap: 1rem;
+
+}
+
+.award-cost {
+    font-size: 5rem;
+    color: var(--orange);
+    position: relative;
+    font-weight: 300;
+}
+
+.sqr {
+    position: absolute;
+    top: -20%;
+    color: var(--lightGrey);
+
+
+}
+
+
+
+
+/* sections */
+
+
+.section-1 {
+    margin: 10rem 0 10rem 5rem;
+    justify-items: baseline;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+
+    height: 700px;
+
+
+
+}
+
+.section-heading-bold {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--greyBlack);
+}
+
+.section-heading-grey {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--lightGrey);
+}
+
+.section-list {
+    margin: .5rem 0;
+    font-size: 1.4rem;
+    color: var(--para-text);
+    margin-left: 1.2rem;
+
+}
+
+.section-list li::before {
+    content: "\2022";
+    color: var(--orange);
+
+    font-weight: 600;
+
+    display: inline-block;
+
+    width: 2rem;
+
+    margin-left: -1em;
+
+    font-size: 1.6rem;
+}
+
+.section-para {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(--para-text);
+}
+
+.section-left {
+    align-items: flex-start;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-left: 4rem;
+
+}
+
+.section-small-text {
+    font-size: 1rem;
+}
+
+.white-bg-btn {
+    border: .2rem solid var(--greyeish);
+    font-weight: 600;
+
+}
+
+.row-btn {
+    gap: 1rem;
+    align-items: flex-start;
+    color: var(--greyeish);
+}
+
+.row-btn .section-small-text {
+    color: var(--lightGrey);
+}
+
+.row-btn .white-bg-btn {
+    color: var(--greyeish);
+}
+
+.screen {
+    background-image: url("https://www.devexpress.com/$resources/styles/platform/LaptopSingle.png");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+    z-index: 1;
+
+
+
+
+
+    height: 700px;
+    width: 900px;
+    top: 0%;
+    left: 35%;
+    padding: 4rem;
+
+
+}
+
+.img-inside-screen {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    object-fit: cover;
+    height: 476px;
+    width: 750px;
+}
+
+.breaker {
+    margin: 5rem 0;
+    border-top: 2px dotted var(--lightGrey);
+}
+
+.section-2 {
+    justify-items: baseline;
+    align-items: flex-start;
+    margin: 10rem 20rem 20rem 0;
+    gap: 4rem;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    height: 750px;
+    margin: 0;
+
+}
+
+.screen-2 {
+
+    background-image: url("https://www.devexpress.com/$resources/styles/platform/LaptopSingle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 4;
+    position: absolute;
+    height: 700px;
+    width: 1200px;
+    top: 0%;
+    left: -30%;
+    padding: 4rem;
+
+}
+
+
+.img-inside-screen-2 {
+
+    position: absolute;
+    left: 18%;
+    top: 10%;
+    height: 476px;
+    width: 750px;
+
+}
+
+/* section -2  */
+
+
+.section-para {
+    gap: 2rem;
+    width: 40%;
+}
+
+.section-para-2 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: var(--greyeish);
+
+}
+
+.section-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 48%;
+    margin-top: 8rem;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+
+.section-right .active {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.section-right .active {
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+
+
+/* section-3 */
+
+
+.section-3 {
+
+    padding-right: 23rem;
+}
+
+/* section -4 */
+
+.section-sub-heading {
+    font-size: 1.5rem;
+}
+
+
+/* skin-section-main */
+
+.skin-section {
+
+    background-image: url("https://www.devexpress.com/$resources/styles/platform/themes-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 75rem;
+}
+
+.skin-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.skin-heading {
+    font-size: 4rem;
+    color: var(--greyeish);
+    text-align: center;
+}
+
+.sub-content {
+    position: absolute;
+    margin-top: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.sub-content p {
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: center;
+
+}
+
+.sub-section {
+    position: absolute;
+    top: 200%;
+    gap: 5rem;
+    margin-top: 30rem;
+
+}
+
+.sub-section img {
+    width: 23rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.section-sub-heading-grey {
+    color: var(--greyeish);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/* leaf section  and award*/
+
+.vsaward-section {
+    background-color: #3c3c3c;
+    justify-items: baseline;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 4rem 0 4rem 4rem;
+}
+
+.leaf {
+    opacity: 0.25;
+    fill: #FFFFFF;
+}
+
+.vs-award {
+    gap: 2rem;
+
+}
+
+.vs-award img {
+    width: 50%;
+    margin-right: 1rem;
+}
+
+.award-sub-text {
+    font-size: 2rem;
+    color: var(--lightGrey);
+}
+
+.leaf-container {
+    display: flex;
+    align-items: center;
+    display: block;
+    overflow: hidden;
+
+
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: 10rem;
+    gap: 2rem;
+}
+
+.vscode-award-heading {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.vsaward-para {
+    font-size: 1.2rem;
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.vscode-award-heading-grey {
+    color: var(--lightGrey);
+    font-size: 1.5rem;
+}
+
+svg {
+    width: 860px;
+    height: 316px;
+}
+
+.vsaward-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+
+
+/* try */
+
+
+
+.section-right {
+    margin-right: 5rem;
+}
+
+/* ////////////////////////////////////////////// 
+
+ Responsive code
+ 
+  ///////////////////////////////////////////// */
+
+.check {
+    display: none;
+}
+
+.hero .hemburger {
+    display: none;
+}
+
+
+
+/* for desktop  */
+
+@media only screen and (max-width: 1022px) {
+
+    .hero .hemburger {
+        display: none;
+    }
+
+    .section-left {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .section-para {
+        width: 80%;
+    }
+
+    .screen {
+        top: 45%;
+        margin: 0;
+        width: 650px;
+        height: 600px;
+    }
+
+    .screen-2 {
+        top: 45%;
+        margin: 0;
+        max-width: 950px;
+        height: 600px;
+        left: -50%;
+        overflow: hidden;
+
+    }
+
+    .img-inside-screen {
+        width: 600px;
+        height: 380px;
+    }
+
+    .img-inside-screen-2 {
+        width: 620px;
+        height: 380px;
+
+
+    }
+
+    .section-1 {
+        margin: 0;
+        height: 1000px;
+        padding: 0;
+        top: 0;
+    }
+
+    .section-2 {
+        margin: 0;
+        height: 1000px;
+        padding: 0;
+        top: 0;
+    }
+
+
+    .section-right {
+        align-items: flex-start;
+        left: 0;
+        margin: 5rem;
+        width: 73.8rem;
+        gap: 2rem;
+    }
+
+    .section-para-2 {
+        line-height: 1.7;
+        color: var(--para-text);
+
+    }
+}
+
+
+
+/* for tablet  */
+
+@media only screen and (max-width: 909px) {
+
+    .hero .hemburger {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-nav {
+        justify-content: space-between;
+        margin: 0 0 0 2rem;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        width: 90%;
+        line-height: 1.6;
+    }
+
+    .hero-bottom-award {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .award-content {
+        width: 100%;
+        padding: 0;
+        gap: 2rem;
+
+    }
+
+    .award-content h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .award-content p {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .screen {
+        top: 40%;
+        margin: 0;
+        width: 850px;
+        height: 600px;
+        left: 30%;
+    }
+
+    .screen-2 {
+
+
+
+        margin: 0;
+        max-width: 950px;
+        height: 600px;
+        left: 25%;
+        top: 33%;
+        overflow: hidden;
+    }
+
+    .gap {
+
+        margin: 0;
+        max-width: 950px;
+        height: 600px;
+        left: 25%;
+        top: 45%;
+        overflow: hidden;
+
+    }
+
+    .img-inside-screen {
+
+        left: 20%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .skin-section {
+
+        background-image: url("https://www.devexpress.com/$resources/styles/platform/themes-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 110rem;
+        width: 100%;
+    }
+
+    .sub-content {
+        position: absolute;
+        margin-top: 48rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+        width: 100%;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    .sub-content h2 {
+        text-align: center;
+    }
+
+    .sub-content .section-heading-grey {
+        font-size: 2rem;
+    }
+
+    .sub-content p {
+        font-size: 1.4rem;
+        width: 100%;
+        line-height: 1.7;
+    }
+
+    .sub-section {
+        gap: 2rem;
+        margin-top: 40rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sub-section img {
+        width: 22rem;
+    }
+
+    /* for mobile */
+
+    @media only screen and (max-width: 518px) {
+
+        .screen {
+            top: 55%;
+            margin: 0;
+            max-width: 530px;
+            height: 400px;
+            left: 0%;
+        }
+
+        .img-inside-screen {
+            height: 250px;
+            width: 430px;
+            left: 22%;
+            top: 12%;
+        }
+
+        .screen-2 {
+            top: 55%; 
+            margin: 0;
+            max-width: 530px;
+            height: 400px;
+            left: 0%;
+        }
+
+        .img-inside-screen-2 {
+            height: 250px;
+            width: 430px;
+            left: 22%;
+            top: 12%;
+        }
+    }
+
+
+
+
+    /* skin section */
+
+    .skin-section {
+        height: 110rem;
+
+    }
+
+    .skin-section-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        display: block;
+        width: 100%;
+
+    }
+
+    .sub-content {
+        position: absolute;
+        margin-top: 13rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+        width: 100%;
+        padding: 1rem;
+        justify-content: space-between;
+
+
+    }
+
+    .sub-content h2 {
+        text-align: center;
+    }
+
+    .sub-content .section-heading-grey {
+        font-size: 2rem;
+    }
+
+    .sub-content p {
+        font-size: 1.4rem;
+        width: 100%;
+        line-height: 1.7;
+    }
+
+    .sub-section {
+        gap: 2rem;
+        margin-top: 40rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sub-section img {
+        width: 22rem;
+    }
+
+    /* leaaf section award*/
+
+    .vsaward-section {
+        padding: 1rem;
+
+    }
+
+    .vs-award {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .vs-award img {
+        width: 8rem;
+        margin-right: 1rem;
+    }
+
+    .award-sub-text {
+        font-size: 2rem;
+        color: var(--lightGrey);
+    }
+
+    .leaf-container {
+        display: flex;
+        align-items: center;
+        display: block;
+        overflow: hidden;
+    }
+
+    .sub-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin-left: 1rem;
+        gap: 2rem;
+        padding: 1rem
+    }
+
+    .vsaward-para {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        text-align: justify;
+    }
+
+    .vscode-award-heading-grey {
+       font-size: 1.5rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+}
