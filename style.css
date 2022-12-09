@@ -8,7 +8,7 @@
 body {
     overflow-y: scroll;
     /* overflow-x: hidden; */
-    font-family: 'Open Sans Condensed', 'HelveticaNeue-CondensedBold', Helvetica, 'Arial Narrow', Calibri, Arial, 'Lucida Grande', sans-serif;
+    
     ;
     font-size: 1rem;
 
@@ -20,6 +20,7 @@ html {
     /* background-color: #6e6e6e; */
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Open Sans Condensed', 'HelveticaNeue-CondensedBold', Helvetica, 'Arial Narrow', Calibri, Arial, 'Lucida Grande', sans-serif;
 
 }
 
@@ -78,7 +79,6 @@ a {
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-
 /* Reasuable code  */
 
 .row {
@@ -106,10 +106,12 @@ a {
 /* Reasuable code Ends  */
 
 /* TOP NAV  */
-
+.see{
+    display: block;
+}
 .top-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 1rem;
     background-color: var(--white);
@@ -124,11 +126,14 @@ a {
     z-index: 100;
     box-shadow: 1px 1px 5px 1px #888888;
 
+
 }
 
 .logo img {
     width: 10.5rem;
-    margin-left: 5rem;
+    margin-right:38rem ;
+
+
 
 
 
@@ -158,13 +163,20 @@ a {
     width: 2rem;
     color: var(--greyeish);
 
+
 }
 
 .search,
 .bell {
     background-color: var(--greyeish);
     border-radius: 100%;
-    padding: .2rem;
+
+    width: 2.5rem;
+    height: 2.5rem;
+display:flex;
+justify-content:center;
+align-items: center;
+
 
 }
 
@@ -210,6 +222,8 @@ a {
     font-stretch: normal;
 }
 
+
+
 .line {
     width: .1rem;
     height: 3rem;
@@ -219,6 +233,7 @@ a {
 .hero-nav-item a {
     color: var(--white);
     text-transform: uppercase;
+    font-weight: 400;
 
 }
 
@@ -307,6 +322,8 @@ a {
     position: absolute;
     top: -20%;
     color: var(--lightGrey);
+    font-weight: lighter;
+
 
 
 }
@@ -427,6 +444,7 @@ a {
 
 }
 
+   
 .img-inside-screen {
     position: absolute;
     left: 25%;
@@ -447,7 +465,7 @@ a {
     margin: 10rem 20rem 20rem 0;
     gap: 4rem;
     position: relative;
-    height: 500px;
+    
     overflow: hidden;
     height: 750px;
     margin: 0;
@@ -462,9 +480,9 @@ a {
     z-index: 4;
     position: absolute;
     height: 700px;
-    width: 1200px;
+    width: 1100px;
     top: 0%;
-    left: -30%;
+    left: -35%;
     padding: 4rem;
 
 }
@@ -493,6 +511,7 @@ a {
     font-weight: lighter;
     color: var(--greyeish);
 
+
 }
 
 .section-right {
@@ -500,13 +519,18 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
-    left: 48%;
+    left: 47%;
     margin-top: 8rem;
     flex-direction: column;
     gap: 2rem;
-    width: 40%;
-}
+    width: 50%;
+ 
 
+}
+.section-right .section-sub-heading{
+ 
+    padding: 1rem 0;
+}
 .section-right .active {
     font-weight: 400;
     font-size: 1rem;
@@ -613,6 +637,7 @@ a {
     align-items: center;
     position: relative;
     padding: 4rem 0 4rem 4rem;
+    margin-top: 10rem;
 }
 
 .leaf {
@@ -690,9 +715,7 @@ svg {
 
 
 
-.section-right {
-    margin-right: 5rem;
-}
+
 
 /* ////////////////////////////////////////////// 
 
@@ -786,6 +809,7 @@ svg {
     .section-para-2 {
         line-height: 1.7;
         color: var(--para-text);
+     
 
     }
     .sub-section img{
@@ -855,11 +879,12 @@ svg {
     }
 
     .screen {
-        top: 40%;
+        top: 10%;
         margin: 0;
         width: 850px;
         height: 600px;
         left: 30%;
+        border: 2px solid gre;
     }
 
     .screen-2 {
@@ -942,10 +967,13 @@ svg {
     .section-right{
         width: 85%;
     }
-
+    .hero-nav{
+        padding-top: .4rem;
+    }
+}
     /* for mobile */
 
-    @media only screen and (max-width: 518px) {
+    @media only screen and (max-width: 520px) {
         .logo{
             display: none;
         }
@@ -956,6 +984,20 @@ svg {
             align-items: flex-end;
             justify-content: flex-end;
           
+        }
+      
+
+        .section-right .active{
+            padding: 1rem 1rem;
+           border: none;
+           width: 30%;
+           border: none;
+        
+
+        }
+        .section-right .active a{
+            color: var(--white);
+            font-weight: 600;
         }
         .screen {
             top: 55%;
@@ -1095,63 +1137,108 @@ svg {
         .hide {
             display: none;
         }
+        .hero-nav{
+            padding-top: .4rem;
+        }
     
     }
-    }
 
 
-
-
- 
 
     
 
-@media only screen and (max-width: 514px){
 
-    .hero-heading{
-        width: 100%;
-        text-align: center;
+
+
+     @media only screen and (max-width: 500px) {
+
+    .secton-1 .gap{
+top: 30%;
     }
-    .hero-content p{
-        text-align: center;
-        padding: 0;
+
+ .mail-merger{
+        top: 70%;
         margin: 0;
+        
     }
-       .sub-section {
-margin-top: 45rem;
-    }
-    .sub-section img{
-        width: 15rem;
+
+    .section-2{
+        height: 1200px;
+
     }
     .section-1{
-       height: 1100px;
-       padding-bottom: 10rem;
-       margin-bottom: 10rem;
+        height: 1200px;
     }
-    .section-2{
-       height: 1100px;
-    }
-    .screen{
+
+    .table{
         top: 70%;
+     
     }
-    .screen-2{
-        top: 70%;
-    }
-    .section-1 .gap{
-    top: 60%;
-    }
-    .section-2 .gap{
+    .spell{
         top: 65%;
+        
     }
-    .logo{
-        display: none;
+    .UI{
+        top: 60%
     }
-    .top-nav{
-        align-items: flex-end;
-        justify-content: flex-end;
-      
+    
+   
+    
+
+    .hero-nav{
+        padding-top: .4rem;
     }
-    .nav-item{
-        margin: 0;
-    }
+    .hero-content p{
+        font-size: 1.6rem;
+        text-align: justify;
+        }
+        .hero-heading{
+            text-align: center;
+            font-stretch: expanded;
+        }
+       .award-cost{
+        margin-top: 1rem;
+        line-height: 2;
+       }
+
+     }
+    
+     @media only screen and (max-width: 426px) {
+
+
+.sub-section img{
+ width: 14rem;
 }
+.hero-heading{
+    text-align: center;
+    font-stretch: expanded;
+}
+.hero-content p{
+font-size: 1.6rem;
+text-align: justify;
+}
+.top-nav{
+    margin-bottom: .9rem;
+}
+.hero-nav{
+    padding-top: .4rem;
+}
+
+     }
+    
+
+/* INFO ABOUT CODE*/
+
+/* * In this i make some resuable classes because the pattern was same of layout */
+
+/* .column :- flex-direction-column */
+/* .row :- flex-direction-row */
+/* section-1:  */
+/* .screen: is the laptop frame */
+/* img-inside-scren: image inside the lapop frame*/
+
+/* active show the button in orange */
+
+
+
+
