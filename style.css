@@ -177,9 +177,10 @@ a {
 
 .hero {
     background: linear-gradient(0deg, rgba(17, 16, 17, 0.8), rgba(10, 10, 10, 0.8)), url(https://www.devexpress.com/products/net/controls/winforms/rich_editor/media/WinForms-RichEditor.jpg );
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
     margin-top: 3rem;
+    background-position: center;
     background-repeat: no-repeat;
 
 
