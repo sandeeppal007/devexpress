@@ -799,7 +799,17 @@ svg {
 /* for tablet  */
 
 @media only screen and (max-width: 909px) {
-
+    .nav-item{
+        margin: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .top-nav{
+        align-items: flex-end;
+        justify-content: flex-end;
+      
+    }
     .hero .hemburger {
         display: block;
         margin: 0;
@@ -936,7 +946,17 @@ svg {
     /* for mobile */
 
     @media only screen and (max-width: 518px) {
-
+        .logo{
+            display: none;
+        }
+        .nav-item{
+            margin: 0;
+        }
+        .top-nav{
+            align-items: flex-end;
+            justify-content: flex-end;
+          
+        }
         .screen {
             top: 55%;
             margin: 0;
@@ -1122,5 +1142,16 @@ margin-top: 45rem;
     }
     .section-2 .gap{
         top: 65%;
+    }
+    .logo{
+        display: none;
+    }
+    .top-nav{
+        align-items: flex-end;
+        justify-content: flex-end;
+      
+    }
+    .nav-item{
+        margin: 0;
     }
 }
