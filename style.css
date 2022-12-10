@@ -17,7 +17,7 @@ body {
 :root,
 body,
 html {
-    background-color:var(--white);
+    background-color: var(--white);
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Open Sans Condensed', 'HelveticaNeue-CondensedBold', Helvetica, 'Arial Narrow', Calibri, Arial, 'Lucida Grande', sans-serif;
@@ -191,8 +191,9 @@ a {
 .bell {
     background-color: var(--lightGrey);
 }
-.nav-items .cart{
- margin-right: .6rem;
+
+.nav-items .cart {
+    margin-right: .6rem;
 }
 
 /* https://www.devexpress.com/products/net/controls/winforms/rich_editor/media/WinForms-RichEditor.jpg */
@@ -209,8 +210,9 @@ a {
 
 
 }
-.hero-nav-item-top{
-margin-top: 1rem;
+
+.hero-nav-item-top {
+    margin-top: 1rem;
 }
 
 .hero-nav {
@@ -228,9 +230,10 @@ margin-top: 1rem;
 }
 
 
-.section-right p{
+.section-right p {
     color: black
 }
+
 .hero-nav-item-top {
     display: flex;
     justify-content: center;
@@ -238,7 +241,7 @@ margin-top: 1rem;
     gap: 1rem;
     font-size: 1.8rem;
     font-weight: 600;
-   
+
     font-stretch: normal;
     flex-direction: row;
 }
@@ -424,7 +427,7 @@ a {
 .section-para {
     font-size: 1.4rem;
     line-height: 1.4;
-   
+
 }
 
 .section-left {
@@ -830,10 +833,11 @@ svg {
     .hero .hemburger {
         display: none;
     }
-    .active{
-      font-size: 1rem;
-      gap: 1rem;
-      padding: 0.5rem 0.8rem;
+
+    .active {
+        font-size: 1rem;
+        gap: 1rem;
+        padding: 0.5rem 0.8rem;
     }
 
 
@@ -905,8 +909,8 @@ svg {
 
     .section-para-2 {
         line-height: 1.7;
-     
-      
+
+
 
 
     }
@@ -942,7 +946,7 @@ svg {
         display: none;
     }
 
- 
+
 
     .cross {
         display: block;
@@ -968,7 +972,7 @@ svg {
         align-items: flex-end;
 
         justify-self: end;
-        background: linear-gradient(0deg, rgba(17, 16, 17, 0.5), rgba(10, 10, 10, 0.5));
+        background: linear-gradient(0deg, rgb(1, 1, 1), rgb(0, 0, 0));
 
 
         height: 115%;
@@ -995,6 +999,7 @@ svg {
         padding: 2rem;
         font-size: 2.5rem;
         font-weight: bolder;
+
 
 
 
@@ -1175,6 +1180,7 @@ svg {
         gap: .5rem;
         margin-right: .7rem;
     }
+
     .logo {
         display: none;
     }
@@ -1438,7 +1444,7 @@ svg {
 
     .mail-merger {
         top: 70%;
-     
+
     }
 }
 
