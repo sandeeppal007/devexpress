@@ -547,7 +547,7 @@ a {
 .section-para-2 {
     font-size: 1.4rem;
     font-weight: lighter;
-   
+    color: var(--greyeish);
 
 
 }
@@ -901,6 +901,7 @@ svg {
 
     .section-para-2 {
         line-height: 1.7;
+        color: var(--greyeish);
       
 
 
