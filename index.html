@@ -14,13 +14,13 @@
     <header class="">
         <!-- first navbar   -->
         <nav class="top-nav ">
-            <a href="" class="logo">
-                <img src="https://www.devexpress.com/Content/TopBar/Logo.svg?w=122&h=29" alt="">
+            <a href="https://www.devexpress.com/Products/Try/" class="logo">
+                <img src="./images/top-nav-Logo.svg" alt="">
             </a>
             <ul class="nav-item">
                 <li class="nav-items">
-                    <a href="" class="row">
-                        <img src="https://www.devexpress.com/Content/TopBar/Cart.svg?w=18&h=18" alt="">
+                    <a href="" class="row cart">
+                        <img src="./images/Cart.svg" alt="">
                         <span>Cart</span>
                     </a>
                 </li>
@@ -32,7 +32,7 @@
                 </li>
 
                 <li class="nav-items active">
-                    <a href="">FREE TRIAL</a>
+                    <a href="https://www.devexpress.com/Products/Try/">FREE TRIAL</a>
                 </li>
 
                 <li>
@@ -40,12 +40,12 @@
                 </li>
                 <li class="search nav-items">
                     <a href="">
-                        <img src="https://www.devexpress.com/Content/TopBar/Search.svg?w=18&h=18" alt="">
+                        <img src="./images/Search.svg" alt="">
                     </a>
                 </li>
                 <li class="nav-items bell">
                     <a href="">
-                        <img src="https://www.devexpress.com/Content/TopBar/Bell.svg?w=18&h=18" alt="">
+                        <img src="./images/Bell.svg" alt="">
                     </a>
                 </li>
             </ul>
@@ -56,11 +56,12 @@
     <main class="hero ">
         <nav class="hero-nav ">
             <a href="">
-                <img src="https://www.devexpress.com/Content/MainMenu/Logo.svg?w=152&h=36" alt="">
+                <img src="./images/hero-Logo.svg" alt="">
 
             </a>
-            <ul class="hero-nav-item hide main_nav">
-                <li><a href="">Products</a>
+            <ul id="myTopnav" class="hero-nav-item-top man-nav">
+                <li class="cross"><img src="./images/cancel.png" alt=""></li>
+                <li class="top-li"><a href="">Products</a>
                 </li>
                 <span class="line"></span>
                 <li><a href="">Demos</a></li>
@@ -73,21 +74,21 @@
                 <span class="line"></span>
                 <li><a href="">About Us</a></li>
             </ul>
-        
-                    <span class="navbar_toggle hemburger">
-                        <img  src="./images/menu.png" alt="">
-                    </span>
-                    
-              
-         
-           
+
+            <span class="hemburger menu">
+                <img src="./images/menu.png" alt="">
+            </span>
+
+
+
+
         </nav>
 
 
         <!-- Hero section -->
 
 
-        <div class="hero-content column ">
+        <div id="hero-bg" class="hero-content column ">
 
             <h1 class="hero-heading">WinForms Rich Text Editor Control</h1>
             <p>Our WinForms RTF Editor Control allows you to integrate advanced text editing capabilities into your next
@@ -96,7 +97,8 @@
                 ease.</p>
             <div class="hero-btns row">
 
-                <a href="" class="hero-btn active">FREE 30-DAY TRIAL</a>
+                <a href="https://www.devexpress.com/Products/Try/" class="hero-btn  btn">FREE 30-DAY TRIAL</a>
+
 
                 <a href="" class="border hero-btn ">GALLRY</a>
 
@@ -105,10 +107,10 @@
         </div>
 
 
-        <div class="hero-bottom-award row">
+        <div class="hero-bottom-award row ">
 
             <div class="award row">
-                <img class="hide" src="https://www.devexpress.com/AboutUs/Awards/i/retina/vs2022-hd.png" alt="">
+                <img class="hide" src="./images/hero-award.png" alt="">
                 <div class="column award-content">
                     <h2>Voted #1 by Readers of Visual Studio Magazine</h2>
                     <p>DevExpress desktop components were voted best-in-class by readers of Visual Studio Magazine.
@@ -166,9 +168,7 @@
 
         <!-- sections-right part -->
         <div class="section-img screen gap">
-            <img class="img-inside-screen"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor@2x.png"
-                alt="">
+            <img class="img-inside-screen" src="./images/section-1-screen.png" alt="">
         </div>
 
     </section>
@@ -180,9 +180,7 @@
     <section class="row section-2 ">
 
         <div class=" screen-2 gap">
-            <img class="img-inside-screen-2"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor-export-to-pdf@2x.png"
-                alt="">
+            <img class="img-inside-screen-2" src="./images/screen-2.png" alt="">
         </div>
 
 
@@ -200,10 +198,10 @@
             <p class="section-para-2">And of course, our WinForms Rich Text Editor can also convert documents to PDF
                 and image formats
                 including PNG, JPEG, BMP, TIFF, EMF, WMF, and GIF.</p>
-              
-                    <a href="" class=" active">FREE 30-DAY TRIAL</a>
-          
-            
+
+            <a href="https://www.devexpress.com/Products/Try/" class=" btn">FREE 30-DAY TRIAL</a>
+
+
 
 
         </div>
@@ -239,20 +237,17 @@
                 <li>Keyboard Shortcuts</li>
             </ul>
 
-            <div class="row-btn">
-                <a href="" class="active">
-                    FREE 30-DAY TRIAL
-                </a>
+            <a href="https://www.devexpress.com/Products/Try/" class=" btn">
+                FREE 30-DAY TRIAL
+            </a>
 
-            </div>
+
         </div>
 
         <!-- sections-right part -->
 
         <div class="section-img screen gap">
-            <img class="img-inside-screen "
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor-formatting-options.png"
-                alt="">
+            <img class="img-inside-screen " src="./images/screen-3.png" alt="">
         </div>
 
 
@@ -266,9 +261,7 @@
 
         <div class="screen-2 mail-merger gap">
 
-            <img class="img-inside-screen-2"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor-mail-merge.png"
-                alt="">
+            <img class="img-inside-screen-2" src="./images/screen-4.png" alt="">
 
         </div>
 
@@ -301,16 +294,20 @@
                 operation is executed.</p>
 
 
-            <a href="" class="active ">
+            <a href="" class=" btn">
                 FREE 30-DAY TRIAL
             </a>
-        
+
         </div>
 
     </section>
 
     <hr class="breaker">
-    <!--  Mail Merge & Dynamic Content SECTION (5) -->
+
+
+
+    <!-- //////////////////////////////////////////////////////////// -->
+
 
 
     <section class="section-1 row ">
@@ -340,7 +337,7 @@
             </ul>
 
 
-            <a href="" class="active">
+            <a href="" class=" btn">
                 FREE 30-DAY TRIAL
             </a>
 
@@ -352,9 +349,7 @@
 
         <!-- sections-right part -->
         <div class="section-img screen gap table">
-            <img class="img-inside-screen"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor-tables.png"
-                alt="">
+            <img class="img-inside-screen" src="./images/screen-5.png" alt="">
         </div>
     </section>
 
@@ -366,9 +361,7 @@
     <section class="section-2 row document-navigation">
 
         <div class="screen-2 gap">
-            <img class="img-inside-screen-2"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-edit-toc.png"
-                alt="">
+            <img class="img-inside-screen-2" src="./images/screen-6.png" alt="">
 
         </div>
         <!-- right part -->
@@ -393,9 +386,11 @@
 
             </div>
 
-            <a href="" class="active">
+            <a href="https://www.devexpress.com/Products/Try/" class=" btn">
                 FREE 30-DAY TRIAL
             </a>
+
+
         </div>
     </section>
 
@@ -427,8 +422,7 @@
 
                 <div class="column ">
 
-                    <img src="https://www.devexpress.com/products/net/controls/winforms/i/skins/basic-vector-pine-light.png"
-                        alt="">
+                    <img src="./images/sub-1.png" alt="">
                     <div>
                         <h3 class="section-sub-heading">Basic Vector</h3>
                         <h3 class="section-sub-heading-grey">Pine Light Palette</h3>
@@ -436,8 +430,7 @@
 
                 </div>
                 <div class="column ">
-                    <img src="https://www.devexpress.com/products/net/controls/winforms/i/skins/office2019colorful-default.png"
-                        alt="">
+                    <img src="./images/sub-2.png" alt="">
                     <div>
                         <h3 class="section-sub-heading">Office 2019 Colorful</h3>
                         <h3 class="section-sub-heading-grey">Default Palette</h3>
@@ -445,8 +438,7 @@
 
                 </div>
                 <div class="column">
-                    <img src="https://www.devexpress.com/products/net/controls/winforms/i/skins/wxi-calmness.png"
-                        alt="">
+                    <img src="./images/sub-3.png" alt="">
                     <div>
                         <h3 class="section-sub-heading">WXI</h3>
                         <h3 class="section-sub-heading-grey">Calmness Palette</h3>
@@ -455,8 +447,7 @@
                 </div>
                 <div class="column">
 
-                    <img src="https://www.devexpress.com/products/net/controls/winforms/i/skins/office2019black-forest.png"
-                        alt="">
+                    <img src="./images/sub-4.png" alt="">
                     <div>
                         <h3 class="section-sub-heading">Office 2019 Black</h3>
                         <h3 class="section-sub-heading-grey">Forest Palette</h3>
@@ -509,16 +500,14 @@
 
             </div>
 
-            <a href="" class="active">
+            <a href="https://www.devexpress.com/Products/Try/" class=" btn">
                 FREE 30-DAY TRIAL
             </a>
         </div>
 
         <!-- Right - part  -->
         <div class="screen gap UI">
-            <img class="img-inside-screen"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor-page-layout.png"
-                alt="">
+            <img class="img-inside-screen" src="./images/screen-7.png" alt="">
         </div>
     </section>
 
@@ -526,7 +515,7 @@
     <!-- Protection & Security section -->
     <hr class="breaker">
     <section class="section-2 row ">
-        <div class="screen-2 gap">
+        <div class="screen-2 gap prtotected">
             <img class="img-inside-screen-2"
                 src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-edit-document-protection.png"
                 alt="">
@@ -552,7 +541,7 @@
                 available to users.
                 Unavailable operations will be hidden from corresponding context menus and disabled within the
                 control’s Ribbon UI.</p>
-            <a href="" class="active">FREE 30-DAY TRIAL</a>
+            <a href="https://www.devexpress.com/Products/Try/" class=" btn">FREE 30-DAY TRIAL</a>
 
         </div>
 
@@ -589,14 +578,12 @@
             <p class="section-para">And yes, our Rich Text Editor supports comments. Users can insert, modify, and
                 delete comments.</p>
 
-            <a href="" class="active">FREE 30-DAY TRIAL</a>
+            <a href="https://www.devexpress.com/Products/Try/" class=" btn">FREE 30-DAY TRIAL</a>
         </div>
 
         <!-- right -->
         <div class="screen gap spell">
-            <img class="img-inside-screen"
-                src="https://www.devexpress.com/products/net/controls/winforms/rich_editor/i/devexpress-winforms-rich-text-editor-spellchecking-review.png"
-                alt="">
+            <img class="img-inside-screen" src="./images/screen-8.png" alt="">
         </div>
     </section>
 
@@ -630,20 +617,20 @@
 
             <div class="row vs-award ">
                 <div class="row">
-                    <img src="https://www.devexpress.com/AboutUs/Awards/i/retina/vs2022-hd.png" alt="">
+                    <img src="./images/vsaward-2022.png" alt="">
                     <h2 class="award-sub-text">x20</h2>
                 </div>
 
                 <div class="row">
-                    <img src="https://www.devexpress.com/AboutUs/Awards/i/retina/vs2021-hd.png" alt="">
+                    <img src="./images/vsaward-2021.png" alt="">
                     <h2 class="award-sub-text">x20</h2>
                 </div>
                 <div class="row">
-                    <img src="https://www.devexpress.com/AboutUs/Awards/i/retina/vs2020-hd.png" alt="">
+                    <img src="./images/vsaward-2020.png" alt="">
                     <h2 class="award-sub-text">x18</h2>
                 </div>
                 <div class="row">
-                    <img src="https://www.devexpress.com/AboutUs/Awards/i/retina/vs2019-hd.png" alt="">
+                    <img src="./images/vsaward-2019.png" alt="">
                     <h2 class="award-sub-text">x19</h2>
                 </div>
             </div>
