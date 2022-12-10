@@ -132,13 +132,14 @@ a {
 
 .logo img {
     width: 10.5rem;
-    margin-right: 38rem;
+    margin-right: 34rem;
 
 
 
 
 
 }
+
 
 .nav-item {
     display: flex;
@@ -227,6 +228,7 @@ a {
 .hero-nav img {
     width: 50%;
     margin-top: 1rem;
+
 }
 
 
@@ -971,11 +973,8 @@ svg {
         justify-content: flex-start;
         justify-items: flex-end;
         align-items: flex-end;
-
         justify-self: end;
         background: linear-gradient(0deg, rgb(1, 1, 0.8), rgb(0, 0, 0.6));
-
-
         height: 120%;
         z-index: 1000;
 
@@ -983,9 +982,7 @@ svg {
 
     .cross {
         width: 20%;
-
     }
-
     .top-li {
         margin-top: 2rem;
     }
@@ -1000,22 +997,11 @@ svg {
         padding: 2rem;
         font-size: 2.5rem;
         font-weight: bolder;
-
-
-
-
-
-
-
-
-
-
     }
 
     .line {
         width: 5rem;
         height: .1rem;
-
     }
 
     .nav-item {
@@ -1062,7 +1048,6 @@ svg {
         width: 100%;
         padding: 0;
         gap: 2rem;
-
     }
 
     .award-content h2 {
@@ -1073,7 +1058,6 @@ svg {
     .award-content p {
         width: 100%;
         text-align: center;
-
     }
 
     .screen {
@@ -1086,9 +1070,6 @@ svg {
     }
 
     .screen-2 {
-
-
-
         margin: 0;
         max-width: 950px;
         height: 600px;
@@ -1098,7 +1079,6 @@ svg {
     }
 
     .gap {
-
         margin: 0;
         max-width: 950px;
         height: 561px;
@@ -1108,14 +1088,12 @@ svg {
     }
 
     .img-inside-screen {
-
         left: 20%;
     }
 
 
 
     .skin-section {
-
         background-image: url("https://www.devexpress.com/$resources/styles/platform/themes-background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -1202,8 +1180,6 @@ svg {
         border: none;
         width: 30%;
         border: none;
-
-
     }
 
     .section-right .active a {
@@ -1381,33 +1357,24 @@ svg {
     .section-2 {
         height: 1200px;
 
-
     }
 
     .section-1 {
         height: 1200px;
 
-
-
-
     }
 
     .table {
         top: 65%;
-
     }
 
     .spell {
         top: 65%;
-
     }
 
     .UI {
         top: 60%
     }
-
-
-
 
     .hero-nav {
         padding-top: .4rem;
@@ -1481,7 +1448,6 @@ svg {
 }
 
 
-
 @media only screen and (max-width: 361px) {
     .section-left {
 
@@ -1544,9 +1510,6 @@ svg {
 
     .active {
         padding: .4rem 1rem;
-
-
-
     }
 
     .nav-item {}
