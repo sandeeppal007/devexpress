@@ -228,7 +228,9 @@ margin-top: 1rem;
 }
 
 
-
+.section-right p{
+    color: red
+}
 .hero-nav-item-top {
     display: flex;
     justify-content: center;
