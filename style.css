@@ -227,6 +227,10 @@ margin-top: 1rem;
     margin-top: 1rem;
 }
 
+
+.section-right p{
+    color: var(--greyBlack)
+}
 .hero-nav-item-top {
     display: flex;
     justify-content: center;
@@ -547,7 +551,7 @@ a {
 .section-para-2 {
     font-size: 1.4rem;
     font-weight: lighter;
-    color: var(--greyeish);
+
 
 
 }
@@ -901,7 +905,7 @@ svg {
 
     .section-para-2 {
         line-height: 1.7;
-        color: var(--greyeish);
+     
       
 
 
