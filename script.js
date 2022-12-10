@@ -1,7 +1,7 @@
 
 
 const navToggle = document.querySelector(".hemburger");
-const top = document.querySelector(".hero-nav-item-top");
+
 const menu = document.querySelector(".menu");
 const topNav = document.querySelector(".top-nav");
 const cross = document.querySelector(".cross");
@@ -12,11 +12,9 @@ var heroBg = document.getElementById("hero-bg");
   
    function menuFunc(){
 x.classList.toggle("hero-nav-item")
-x.classList.remove("hero-nav-item-top")
 topNav.style.position = "static";
 menu.style.display = "none";
-top.style.marginTop = "0";
-
+// heroBg.classList.toggle("remove-bg-text")
    }
 
    function crossFunc(){
