@@ -209,6 +209,9 @@ a {
 
 
 }
+.hero-nav-item-top{
+margin-top: 1rem;
+}
 
 .hero-nav {
     display: flex;
@@ -216,6 +219,8 @@ a {
     align-items: center;
 
 }
+
+
 
 .hero-nav img {
     width: 50%;
@@ -415,7 +420,7 @@ a {
 .section-para {
     font-size: 1.4rem;
     line-height: 1.4;
-    color: var(--para-text);
+   
 }
 
 .section-left {
@@ -932,10 +937,7 @@ svg {
         display: none;
     }
 
-    .remove-bg-text .hero-heading {
-        display: none;
-
-    }
+ 
 
     .cross {
         display: block;
@@ -1465,6 +1467,7 @@ svg {
 
 
 }
+
 
 
 @media only screen and (max-width: 361px) {
